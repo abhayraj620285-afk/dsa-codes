@@ -1,5 +1,10 @@
 package OOPS;
 
 public interface Student {
-    public String getBio(String name);
+     String getBio(String name);
+
+    static String name(int n) {
+        return null;
+    }
+
 }
