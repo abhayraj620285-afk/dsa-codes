@@ -11,12 +11,12 @@ public class TopologicalSort {
             int u = edges[i][0];
             int v = edges[i][1];
             adj.get(u).add(v);
-            indegree[i]++;
+            indegree[v]++;
         }
         Queue<Integer> qt = new LinkedList<>();
         for(int i=0;i<V;i++){
             if(indegree[i]==0){
-                qt.add(V);
+                qt.add(i);
             }
         }
         ArrayList<Integer> ans = new ArrayList<>();
